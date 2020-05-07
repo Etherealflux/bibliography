@@ -9,13 +9,13 @@
   abstract = {Code obfuscation is widely used by software developers to protect intellectual property, and malware writers to hamper program analysis. However, there seems to be little work on systematic evaluations of effectiveness of obfuscation techniques against automated program analysis. The result is that we have no methodical way of knowing what kinds of automated analyses an obfuscation method can withstand. This paper addresses the problem of characterizing the resilience of code obfuscation transformations against automated symbolic execution attacks, complementing existing works that measure the potency of obfuscation transformations against human-assisted attacks through user studies. We evaluated our approach over 5000 different C programs, which have each been obfuscated using existing implementations of obfuscation transformations. The results show that many existing obfuscation transformations, such as virtualization, stand little chance of withstanding symbolicexecution based deobfuscation. A crucial and perhaps surprising observation we make is that symbolic-execution based deobfuscators can easily deobfuscate transformations that preserve program semantics. On the other hand, we present new obfuscation transformations that change program behavior in subtle yet acceptable ways, and show that they can render symbolic-execution based deobfuscation analysis ineffective in practice.},
   file     = {:Banescu2016 - Code Obfuscation against Symbolic Execution Attacks.pdf:PDF},
   groups   = {obfuscation},
-  isbn     = {9781450347716},
   journal  = {ACM International Conference Proceeding Series},
   year     = {2016},
 }
 
 @Article{Barak2012,
   author   = {Barak, Boaz and Goldreich, Oded and Impagliazzo, Russell and Rudich, Steven and Ucla, Amit Sahai and Vadhan, Salil and Yang, Ke},
+  date     = {2012-04-12},
   title    = {{On the (Im)possibility of obfuscating programs}},
   doi      = {10.1145/2160158.2160159},
   issn     = {00045411},
@@ -26,8 +26,6 @@
   groups   = {obfuscation},
   journal  = {Journal of the ACM},
   keywords = {Complexity theory,Cryptography,Homomorphic encryption,Pseudorandom functions,Rice's Theorem,Software protection,Software watermarking,Statistical zero knowledge},
-  month    = {apr},
-  year     = {2012},
 }
 
 @Article{Bardin2017,
@@ -56,8 +54,6 @@
   abstract    = {It has become more and more common to distribute software in forms that retain most or all of the information present in the original source code. An important example is Java bytecode. Since such codes are easy to decompile, they increase the risk of malicious reverse engineering attacks. par In this paper we review several techniques for technical protection of software secrets. We will argue that automatic em code obfuscation is currently the most viable method for preventing reverse engineering. We then describe the design of a em code obfuscator, a tool which converts a program into an equivalent one that is more difficult to understand and reverse engineer. par The obfuscator is based on the application of code transformations, in many cases similar to those used by compiler optimizers. We describe a large number of such transformations, classify them, and evaluate them with respect to their em potency (To what degree is a human reader confused?), em resilience (How well are automatic em deobfuscation attacks resisted?), and em cost (How much overhead is added to the application?). par We finally discuss some possible deobfuscation techniques (such as program em slicing) and possible counter-measures an obfuscator could employ against them.},
   file        = {:Collberg1997 - A Taxonomy of Obfuscating Transformations.pdf:PDF},
   groups      = {obfuscation},
-  isbn        = {1173-3500},
-  issn        = {11733500},
   year        = {1997},
 }
 
@@ -117,10 +113,8 @@
   pages         = {177--189},
   abstract      = {Code obfuscation is a major tool for protecting software intellectual property from attacks such as reverse engineering or code tampering. Yet, recently proposed (automated) attacks based on Dynamic Symbolic Execution (DSE) shows very promising results, hence threatening software integrity. Current defenses are not fully satisfactory, being either not efficient against symbolic reasoning, or affecting runtime performance too much, or being too easy to spot. We present and study a new class of anti-DSE protections coined as path-oriented protections targeting the weakest spot of DSE, namely path exploration. We propose a lightweight, efficient, resistant and analytically proved class of obfuscation algorithms designed to hinder DSE-based attacks. Extensive evaluation demonstrates that these approaches critically counter symbolic deobfuscation while yielding only a very slight overhead.},
   archiveprefix = {arXiv},
-  arxivid       = {1908.01549},
   file          = {:Ollivier2019 - How to Kill Symbolic Deobfuscation for Free (or_ Unleashing the Potential of Path Oriented Protections).PDF:PDF},
   groups        = {obfuscation},
-  isbn          = {9781450376280},
   year          = {2019},
 }
 
@@ -134,13 +128,13 @@
   abstract = {Software protection has taken an important place during the last decade in order to protect legit software against reverse engineering or tampering. Virtualization is considered as one of the very best defenses against such attacks. We present a generic approach based on symbolic path exploration, taint and recompilation allowing to recover, from a virtualized code, a devirtualized code semantically identical to the original one and close in size. We define criteria and metrics to evaluate the relevance of the deobfuscated results in terms of correctness and precision. Finally we propose an open-source setup allowing to evaluate the proposed approach against several forms of virtualization.},
   file     = {:Salwan2018 - Symbolic Deobfuscation_ from Virtualized Code Back to the Original.PDF:PDF},
   groups   = {obfuscation},
-  isbn     = {9783319934105},
   journal  = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
   year     = {2018},
 }
 
 @Article{Xu2017,
   author        = {Xu, Hui and Zhou, Yangfan and Kang, Yu and Lyu, Michael R.},
+  date          = {2017-10-03},
   title         = {{On Secure and Usable Program Obfuscation: A Survey}},
   eprint        = {1710.01139},
   url           = {http://arxiv.org/abs/1710.01139},
@@ -149,8 +143,7 @@
   arxivid       = {1710.01139},
   file          = {:Xu2017 - On Secure and Usable Program Obfuscation_ a Survey.PDF:PDF},
   groups        = {obfuscation},
-  month         = {oct},
-  year          = {2017},
+  journal       = {CoRR},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}
