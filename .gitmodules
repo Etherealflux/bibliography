@@ -1,0 +1,3 @@
+[submodule "bibliography-pdfs"]
+	path = bibliography-pdfs
+	url = git@github.com:Etherealflux/bibliography-pdfs.git
