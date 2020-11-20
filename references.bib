@@ -11,7 +11,7 @@
   abstract  = {A conjunction is a function {\$}{\$}f(x{\_}1,{\backslash}dots ,x{\_}n) = {\backslash}bigwedge {\_}{\{}i {\backslash}in S{\}} l{\_}i{\$}{\$}where {\$}{\$}S {\backslash}subseteq [n]{\$}{\$}and each {\$}{\$}l{\_}i{\$}{\$}is {\$}{\$}x{\_}i{\$}{\$}or {\$}{\$}{\backslash}lnot x{\_}i{\$}{\$}. Bishop et al. (CRYPTO 2018) recently proposed obfuscating conjunctions by embedding them in the error positions of a noisy Reed-Solomon codeword and placing the codeword in a group exponent. They prove distributional virtual black box (VBB) security in the generic group model for random conjunctions where {\$}{\$}|S| {\backslash}ge 0.226n{\$}{\$}. While conjunction obfuscation is known from LWE [31, 47], these constructions rely on substantial technical machinery.},
   address   = {Cham},
   file      = {:10.1007_978-3-030-17659-4_22 - New Techniques for Obfuscating Conjunctions.PDF:PDF},
-  groups    = {obfuscation},
+  groups    = {creation},
   year      = {2019},
 }
 
@@ -26,7 +26,7 @@
   abstract  = {We present a simple and efficient compiler for transforming secure multi-party computation (MPC) protocols that enjoy security only with an honest majority into MPC protocols that guarantee security with no honest majority, in the oblivious-transfer (OT) hybrid model. Our technique works by combining a secure protocol in the honest majority setting with a protocol achieving only security against semi-honest parties in the setting of no honest majority.},
   address   = {Berlin, Heidelberg},
   file      = {:10.1007_978-3-540-85174-5_32 - Founding Cryptography on Oblivious Transfer Efficiently.PDF:PDF},
-  groups    = {obfuscation},
+  groups    = {creation},
   year      = {2008},
 }
 
@@ -43,7 +43,7 @@
   url       = {https://doi.org/10.1145/3359789.3359812},
   address   = {New York, NY, USA},
   file      = {:Ollivier2019 - How to Kill Symbolic Deobfuscation for Free (or_ Unleashing the Potential of Path Oriented Protections).PDF:PDF},
-  groups    = {obfuscation},
+  groups    = {attacking},
   keywords  = {reverse engineering, obfuscation, code protection},
   numpages  = {13},
   year      = {2019},
@@ -56,7 +56,7 @@
   doi       = {10.1109/ACT.2010.33},
   pages     = {201-203},
   file      = {:5675808 - Analysis of Machine Learning Techniques Used in Behavior Based Malware Detection.pdf:PDF},
-  groups    = {obfuscation},
+  groups    = {detection},
   year      = {2010},
 }
 
@@ -68,7 +68,7 @@
   pages     = {717-722},
   volume    = {2},
   file      = {:6016774 - Detection of Packed Executables Using Support Vector Machines.pdf:PDF},
-  groups    = {obfuscation},
+  groups    = {detection},
   year      = {2011},
 }
 
@@ -78,7 +78,7 @@
   title     = {Optimizing obfuscation: avoiding Barrington's theorem},
   pages     = {646--658},
   file      = {:ananth2014optimizing - Optimizing Obfuscation_ Avoiding Barrington's Theorem.PDF:PDF},
-  groups    = {obfuscation},
+  groups    = {creation},
   year      = {2014},
 }
 
@@ -90,7 +90,7 @@
   volume   = {5-9-Decemb},
   abstract = {Code obfuscation is widely used by software developers to protect intellectual property, and malware writers to hamper program analysis. However, there seems to be little work on systematic evaluations of effectiveness of obfuscation techniques against automated program analysis. The result is that we have no methodical way of knowing what kinds of automated analyses an obfuscation method can withstand. This paper addresses the problem of characterizing the resilience of code obfuscation transformations against automated symbolic execution attacks, complementing existing works that measure the potency of obfuscation transformations against human-assisted attacks through user studies. We evaluated our approach over 5000 different C programs, which have each been obfuscated using existing implementations of obfuscation transformations. The results show that many existing obfuscation transformations, such as virtualization, stand little chance of withstanding symbolicexecution based deobfuscation. A crucial and perhaps surprising observation we make is that symbolic-execution based deobfuscators can easily deobfuscate transformations that preserve program semantics. On the other hand, we present new obfuscation transformations that change program behavior in subtle yet acceptable ways, and show that they can render symbolic-execution based deobfuscation analysis ineffective in practice.},
   file     = {:Banescu2016 - Code Obfuscation against Symbolic Execution Attacks.pdf:PDF},
-  groups   = {obfuscation},
+  groups   = {creation},
   journal  = {ACM International Conference Proceeding Series},
   year     = {2016},
 }
@@ -125,7 +125,7 @@ out several potential applications of obfuscators, by constructing “unob-
 fuscatable” signature schemes, encryption schemes, and pseudorandom
 function families.},
   file     = {:Barak2001 - On the (Im)possibility of Obfuscating Programs (Extended Abstract).pdf:PDF},
-  groups   = {obfuscation},
+  groups   = {creation},
   year     = {2001},
 }
 
@@ -136,7 +136,7 @@ function families.},
   organization = {Springer},
   pages        = {1--18},
   file         = {:barak2001possibility - On the (im) Possibility of Obfuscating Programs.PDF:PDF},
-  groups       = {obfuscation},
+  groups       = {creation},
   year         = {2001},
 }
 
@@ -150,7 +150,7 @@ function families.},
   volume   = {59},
   abstract = {Informally, an obfuscator O is an (efficient, probabilistic) "compiler" that takes as input a program (or circuit) P and produces a new program O(P) that has the same functionality as P yet is "unintelligible" in some sense. Obfuscators, if they exist, would have a wide variety of cryptographic and complexity-theoretic applications, ranging from software protection to homomorphic encryption to complexity-theoretic analogues of Rice's theorem.Most of these applications are based on an interpretation of the "unintelligibility" condition in obfuscation as meaning that O(P) is a "virtual black box," in the sense that anything one can efficiently compute given O(P), one could also efficiently compute given oracle access to P. In this work, we initiate a theoretical investigation of obfuscation. Our main result is that, even under very weak formalizations of the above intuition, obfuscation is impossible. We prove this by constructing a family of efficient programs P that are unobfuscatable in the sense that (a) given any efficient program P that computes the same function as a program P $\epsilon$ P, the "source code" P can be efficiently reconstructed, yet (b) given oracle access to a (randomly selected) program P $\epsilon$ P, no efficient algorithm can reconstruct P (or even distinguish a certain bit in the code from random) except with negligible probability. We extend our impossibility result in a number of ways, including even obfuscators that (a) are not necessarily computable in polynomial time, (b) only approximately preserve the functionality, and (c) only need to work for very restricted models of computation (TC0).We also rule out several potential applications of obfuscators, by constructing "unobfuscatable" signature schemes, encryption schemes, and pseudorandom function families. {\textcopyright} 2012 ACM.},
   file     = {:Barak2012 - On the (Im)possibility of Obfuscating Programs.PDF:PDF},
-  groups   = {obfuscation},
+  groups   = {creation},
   journal  = {Journal of the ACM},
   keywords = {Complexity theory, Cryptography, Homomorphic encryption, Pseudorandom functions, Rice's Theorem, Software protection, Software watermarking, Statistical zero knowledge},
 }
@@ -163,7 +163,7 @@ function families.},
   pages    = {633--651},
   abstract = {Software deobfuscation is a crucial activity in security analysis and especially in malware analysis. While standard static and dynamic approaches suffer from well-known shortcomings, Dynamic Symbolic Execution (DSE) has recently been proposed as an interesting alternative, more robust than staticanalysis and more complete than dynamic analysis. Yet, DSE addresses only certain kinds of questions encountered by a reverser, namely feasibility questions. Many issues arising during reverse, e.g., detecting protection schemes such as opaque predicates, fall into the category of infeasibility questions. We present Backward-Bounded DSE, a generic, precise, efficient and robust method for solving infeasibility questions. We demonstrate the benefit of the method for opaque predicates and call stack tampering, and give some insight for its usage for some other protection schemes. Especially, the technique has successfully been used on state-of-the-art packers as well as on the government-grade X-Tunnel malware - allowing its entire deobfuscation. Backward-Bounded DSE does not supersede existing DSE approaches, but rather complements them by addressing infeasibility questions in a scalable and precise manner. Following this line, we proposesparse disassembly, a combination of Backward-Bounded DSE and static disassembly able to enlarge dynamic disassembly in a guaranteed way, hence getting the best of dynamic and static disassembly. This work paves the way for robust, efficient and precise disassembly tools for heavily-obfuscated binaries.},
   file     = {:Bardin2017 - Backward Bounded DSE_ Targeting Infeasibility Questions on Obfuscated Codes.PDF:PDF},
-  groups   = {obfuscation},
+  groups   = {attacking},
   isbn     = {9781509055326},
   journal  = {Proceedings - IEEE Symposium on Security and Privacy},
   keywords = {Code analysis,Deobfuscation,Malware,Reverse-Engineering,Symbolic Execution},
@@ -181,7 +181,7 @@ function families.},
   volume   = {38},
   abstract = {We show that any language recognized by an NC1 circuit (fan-in 2, depth O(log n)) can be recognized by a width-5 polynomial-size branching program. As any bounded-width polynomial-size branching program can be simulated by an NC1 circuit, we have that the class of languages recognized by such programs is exactly nonuniform NC1. Further, following Ruzzo (J. Comput. System Sci. 22 (1981), 365–383) and Cook (Inform. and Control 64 (1985) 2–22), if the branching programs are restricted to be ATIME(logn)-uniform, they recognize the same languages as do ATIME(log n)-uniform NC1 circuits, that is, those languages in ATIME(log n). We also extend the method of proof to investigate the complexity of the word problem for a fixed permutation group and show that polynomial size circuits of width 4 also recognize exactly nonuniform NC1.},
   file     = {:BARRINGTON1989150 - Bounded Width Polynomial Size Branching Programs Recognize Exactly Those Languages in NC1.pdf:PDF},
-  groups   = {obfuscation},
+  groups   = {creation},
   journal  = {Journal of Computer and System Sciences},
   year     = {1989},
 }
@@ -193,7 +193,7 @@ function families.},
   organization = {Springer},
   pages        = {3--12},
   file         = {:cheon2015cryptanalysis - Cryptanalysis of the Multilinear Map Over the Integers.PDF:PDF},
-  groups       = {obfuscation},
+  groups       = {attacking},
   year         = {2015},
 }
 
@@ -208,7 +208,7 @@ function families.},
   volume     = {12},
   address    = {GBR},
   file       = {:Cohen1993 - Operating System Protection through Program Evolution.pdf:PDF},
-  groups     = {obfuscation},
+  groups     = {creation},
   issue_date = {Oct. 1993},
   journal    = {Comput. Secur.},
   keywords   = {Operating systems, Trusted systems, Program evolution, Computational complexity},
@@ -228,7 +228,7 @@ function families.},
   url         = {https://www.researchgate.net/profile/Clark{\_}Thomborson/publication/37987523{\_}A{\_}Taxonomy{\_}of{\_}Obfuscating{\_}Transformations/links/00b7d51e34cb9590db000000/A-Taxonomy-of-Obfuscating-Transformations.pdf},
   abstract    = {It has become more and more common to distribute software in forms that retain most or all of the information present in the original source code. An important example is Java bytecode. Since such codes are easy to decompile, they increase the risk of malicious reverse engineering attacks. par In this paper we review several techniques for technical protection of software secrets. We will argue that automatic em code obfuscation is currently the most viable method for preventing reverse engineering. We then describe the design of a em code obfuscator, a tool which converts a program into an equivalent one that is more difficult to understand and reverse engineer. par The obfuscator is based on the application of code transformations, in many cases similar to those used by compiler optimizers. We describe a large number of such transformations, classify them, and evaluate them with respect to their em potency (To what degree is a human reader confused?), em resilience (How well are automatic em deobfuscation attacks resisted?), and em cost (How much overhead is added to the application?). par We finally discuss some possible deobfuscation techniques (such as program em slicing) and possible counter-measures an obfuscator could employ against them.},
   file        = {:Collberg1997 - A Taxonomy of Obfuscating Transformations.pdf:PDF},
-  groups      = {obfuscation},
+  groups      = {creation},
   year        = {1997},
 }
 
@@ -245,7 +245,7 @@ function families.},
   abstract  = {It has become common to distribute software in forms that are isomorphic to the original source code. An important example is Java bytecode. Since such codes are easy to decompile, they increase the risk of malicious reverse engineering attacks. In this paper we describe the design of a Java code obfuscator, a tool which - through the application of code transformations - converts a Java program into an equivalent one that is more difficult to reverse engineer. We describe a number of transformations which obfuscate control-flow. Transformations are evaluated with respect to potency (To what degree is a human reader confused?), resilience (How well are automatic deobfuscation attacks resisted?), cost (How much time/space overhead is added?), and stealth (How well does obfuscated code blend in with the original code?). The resilience of many control-altering transformations rely on the resilience of opaque predicates. These are boolean valued expressions whose values are known to the obfuscator but difficult to determine for an automatic deobfuscator. We show how to construct resilient, cheap, and stealthy opaque predicates based on the intractability of certain static analysis problems such as alias analysis.},
   address   = {New York, NY, USA},
   file      = {:Collberg1998 - Manufacturing Cheap, Resilient, and Stealthy Opaque Constructs.PDF:PDF},
-  groups    = {obfuscation},
+  groups    = {creation},
   issn      = {07308566},
   year      = {1998},
 }
@@ -260,7 +260,7 @@ function families.},
   volume   = {45},
   abstract = {In this work, we study indistinguishability obfuscation and functional encryption for general circuits: Indistinguishability obfuscation requires that given any two equivalent circuits C0 and C1 of similar size, the obfuscations of C0 and C1 should be computationally indistinguishable. In functional encryption, ciphertexts encrypt inputs x and keys are issued for circuits C. Using the key SKC to decrypt a ciphertext CTx=Enc(x) yields the value C(x) but does not reveal anything else about x. Furthermore, no collusion of secret key holders should be able to learn anything more than the union of what they can each learn individually. We give constructions for indistinguishability obfuscation and functional encryption that supports all polynomial-size circuits. We accomplish this goal in three steps: (1) We describe a candidate construction for indistinguishability obfuscation for NC1 circuits. The security of this construction is based on a new algebraic hardness assumption. The candidate and assumption use a simplified variant of multilinear maps, which we call multilinear jigsaw puzzles. (2) We show how to use indistinguishability obfuscation for NC1 together with fully homomorphic encryption (with decryption in NC1) to achieve indistinguishability obfuscation for all circuits. (3) Finally, we show how to use indistinguishability obfuscation for circuits, public-key encryption, and noninteractive zero knowledge to achieve functional encryption for all circuits. The functional encryption scheme we construct also enjoys succinct ciphertexts, which enables several other applications.},
   file     = {:Garg2016 - Candidate Indistinguishability Obfuscation and Functional Encryption for All Circuits.PDF:PDF},
-  groups   = {obfuscation},
+  groups   = {creation},
   journal  = {SIAM Journal on Computing},
   keywords = {Functional encryption,Obfuscation,Predicate encryption},
   year     = {2016},
@@ -273,7 +273,7 @@ function families.},
   type    = {software},
   url     = {https://github.com/upx/upx},
   urldate = {2020-05-11},
-  groups  = {obfuscation},
+  groups  = {creation},
 }
 
 @InProceedings{Gosler1986,
@@ -286,7 +286,7 @@ function families.},
   publisher = {Springer Berlin Heidelberg},
   abstract  = {Staggering amounts of commercial software are marketed to fulfill needs from the PC explosion. Unfortunately, such software is trivial to duplicate! From the vendors' viewpoint a way to protect profit is needed. Typically, they have resorted to various schemes that attempt to inhibit the duplication process.},
   address   = {Berlin, Heidelberg},
-  groups    = {obfuscation},
+  groups    = {creation},
   year      = {1986},
 }
 
@@ -297,7 +297,7 @@ function families.},
   doi       = {10.1109/icse.2017.28},
   publisher = {{IEEE}},
   file      = {:Liu2017 - Stochastic Optimization of Program Obfuscation.pdf:PDF},
-  groups    = {obfuscation},
+  groups    = {creation},
   month     = {may},
   year      = {2017},
 }
@@ -313,7 +313,7 @@ function families.},
   address    = {New York, NY, USA},
   articleno  = {4},
   file       = {:Roundy2013 - Binary Code Obfuscations in Prevalent Packer Tools.PDF:PDF},
-  groups     = {obfuscation},
+  groups     = {creation},
   issue_date = {October 2013},
   journal    = {ACM Comput. Surv.},
   keywords   = {obfuscation, program binary analysis, Malware},
@@ -332,7 +332,7 @@ function families.},
   volume   = {10885 LNCS},
   abstract = {Software protection has taken an important place during the last decade in order to protect legit software against reverse engineering or tampering. Virtualization is considered as one of the very best defenses against such attacks. We present a generic approach based on symbolic path exploration, taint and recompilation allowing to recover, from a virtualized code, a devirtualized code semantically identical to the original one and close in size. We define criteria and metrics to evaluate the relevance of the deobfuscated results in terms of correctness and precision. Finally we propose an open-source setup allowing to evaluate the proposed approach against several forms of virtualization.},
   file     = {:Salwan2018 - Symbolic Deobfuscation_ from Virtualized Code Back to the Original.PDF:PDF},
-  groups   = {obfuscation},
+  groups   = {attacking},
   journal  = {Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics)},
   year     = {2018},
 }
@@ -348,7 +348,7 @@ function families.},
   address    = {New York, NY, USA},
   articleno  = {4},
   file       = {:Schrittwieser2016 - Protecting Software through Obfuscation_ Can It Keep Pace with Progress in Code Analysis_.PDF:PDF},
-  groups     = {obfuscation},
+  groups     = {creation},
   issue_date = {July 2016},
   journal    = {ACM Comput. Surv.},
   keywords   = {malware, Software obfuscation, program analysis, reverse engineering, software protection},
@@ -368,7 +368,7 @@ function families.},
   archiveprefix = {arXiv},
   arxivid       = {1710.01139},
   file          = {:Xu2017 - On Secure and Usable Program Obfuscation_ a Survey.PDF:PDF},
-  groups        = {obfuscation},
+  groups        = {creation},
   journal       = {CoRR},
 }
 
@@ -380,7 +380,10 @@ function families.},
 
 @Comment{jabref-meta: grouping:
 0 AllEntriesGroup:;
-1 StaticGroup:obfuscation\;0\;0\;0x8a8a8aff\;\;\;;
+1 StaticGroup:obfuscation\;2\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:attacking\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:creation\;0\;1\;0x8a8a8aff\;\;\;;
+2 StaticGroup:detection\;0\;0\;0x8a8a8aff\;\;\;;
 }
 
 @Comment{jabref-meta: saveOrderConfig:specified;bibtexkey;false;author;false;title;true;}
